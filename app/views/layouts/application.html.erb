@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jumpoff</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <%= link_to 'Home', root_path %>
+  <%= link_to 'Projects', root_path %>
+  <%= link_to 'About Us', root_path %>
+  <%= link_to 'FAQs', root_path %>
+  <%= link_to 'Contact Us', root_path %>
+  <%= link_to 'Features', root_path %>
+  <%= link_to 'Pricing', root_path %>
+  <%= link_to 'Products', root_path %>
+   <%= link_to 'Log In', root_path %>
+  <%= link_to 'Sign Up', root_path %>
+
+<%= yield %>
+<h1>hhheeeee</h1>
+</body>
+</html>

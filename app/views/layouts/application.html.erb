@@ -7,16 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
- <%= link_to 'Home', root_path %>
-  <%= link_to 'Projects', root_path %>
-  <%= link_to 'About Us', root_path %>
-  <%= link_to 'FAQs', root_path %>
-  <%= link_to 'Contact Us', root_path %>
-  <%= link_to 'Features', root_path %>
-  <%= link_to 'Pricing', root_path %>
-  <%= link_to 'Products', root_path %>
-   <%= link_to 'Log In', root_path %>
-  <%= link_to 'Sign Up', root_path %>
+ <%= link_to 'Home',  welcome_index_path %>
+  <%= link_to 'Our Work', welcome_work_path %>
+  <%= link_to 'What We Do', welcome_capabilities_path %>
+  <%= link_to 'About Us', welcome_about_path %>
+  <%= link_to 'Get In Touch',  welcome_contact_path %>
+  
 
 <%= yield %>
 <h1>hhheeeee</h1>

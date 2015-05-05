@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jumpoff</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+<body>
+    <section class="containter">
+      <ul class="nav nav-tabs">  
+ <li><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'Projects', welcome_projects_path %></li>
+  <li><%= link_to 'About Us', welcome_about_path %></li>
+  <li><%= link_to 'FAQs', welcome_faqs_path %></li>
+  <li><%= link_to 'Contact Us', welcome_contact_path %></li>
+  <li><%= link_to 'Features', welcome_features_path %></li>
+  <li><%= link_to 'Pricing', welcome_pricing_path %></li>
+  <li><%= link_to 'Products', welcome_products_path %></li>
+<li><%= link_to 'Log In', root_path %></li>
+  <li><%= link_to 'Sign Up', root_path %></li>
+</ul>
+        </section>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+<%= yield %>
+<h1>hhheeeee</h1>
+</body>
+</html>
